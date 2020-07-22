@@ -16,8 +16,6 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  // If the message is "how to embed"
-
   if (message.content.toLowerCase().includes(msg)) {
     message.react('💩');
   }
@@ -26,8 +24,9 @@ client.on('message', message => {
   }
 });
 
-client.login(token);
 // Log our bot in using the token
+client.login(token);
+
 
 
 // const expression = "\bpoopy\b";
